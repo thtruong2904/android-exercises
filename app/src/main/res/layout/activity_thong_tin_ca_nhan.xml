@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinCaNhanActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin cá nhân"
+        android:textSize="40px"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        />
+
+    <EditText
+        android:id="@+id/hoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:hint="Nhập họ tên"
+        android:drawableLeft="@drawable/edit_text"
+        />
+
+    <EditText
+        android:id="@+id/cccd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:hint="Nhập số CCCD"
+        android:inputType="number"
+        android:drawableLeft="@drawable/edit_text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bằng cấp"
+        android:textSize="40px"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        />
+
+    <RadioGroup
+        android:id="@+id/bangcap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/daihoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đại học" />
+
+        <RadioButton
+            android:id="@+id/caodang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cao đẳng" />
+
+        <RadioButton
+            android:id="@+id/trungcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trung cấp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sở thích"
+        android:textSize="40px"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <CheckBox
+            android:id="@+id/choigame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chơi game"
+            android:clickable="true"/>
+
+        <CheckBox
+            android:id="@+id/docsach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đọc sách"
+            android:clickable="true"/>
+
+        <CheckBox
+            android:id="@+id/docbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đọc báo"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin khác"
+        android:textSize="50px"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        />
+
+    <EditText
+        android:id="@+id/ttk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:hint="Nhập thông tin khác"
+        android:drawableLeft="@drawable/edit_text"
+        />
+
+    <Button
+        android:id="@+id/guithongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi thông tin"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/thongtin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:textSize="50px"/>
+</LinearLayout>
